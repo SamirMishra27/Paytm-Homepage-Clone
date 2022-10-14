@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    width: 100%;
+    font-family: Inter;
+}
+
+.introduction {
+    height: 95vh;
+}
+
+.describe-inner .heading {
+    font-size: 54px;
+    line-height: 65px;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    width: 100%;
+    background: #00baf2;
+    border-radius: 10px;
+}
+
+@media (max-width: 440px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    .introduction {
+        height: 120vh;
+    }
+
+    .describe-inner .heading {
+        font-size: 42px;
+        line-height: 54px;
+    }
+
+    .important-navbar-info span {
+        padding: 0px;
+        text-align: center;
+    }
+}
